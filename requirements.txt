@@ -1,0 +1,8 @@
+# Requirements
+
+- LaTeX Distribution (TeX Live / MiKTeX / MacTeX)
+- TeXstudio or Overleaf
+- PdfLaTeX Compiler
+
+## Common Packages
+geometry, amsmath, graphicx, xcolor, hyperref, fancyhdr, beamer, booktabs
