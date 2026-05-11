@@ -1,0 +1,378 @@
+\documentclass[12pt,a4paper]{report}
+
+% ================= PACKAGES =================
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{booktabs}
+
+% ================= FONT =================
+
+\usepackage{newtxtext,newtxmath}
+
+% ================= LINE SPACING =================
+
+\onehalfspacing
+
+% ================= PAGE STYLE =================
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\fancyhead[L]{AI for Smart Transportation}
+\fancyhead[R]{Master Thesis}
+
+\fancyfoot[C]{\thepage}
+
+% ================= CHAPTER STYLE =================
+
+\titleformat{\chapter}
+{\Huge\centering\bfseries\color{black}}
+{Chapter \thechapter}{20pt}{}
+
+% ================= DOCUMENT =================
+
+\begin{document}
+	
+	% =================================================
+	% TITLE PAGE
+	% =================================================
+	
+	\begin{titlepage}
+		
+		\centering
+		
+		\vspace*{2cm}
+		
+		{\Huge\bfseries
+			Artificial Intelligence for Smart Urban Transportation Systems
+			\par}
+		
+		\vspace{1cm}
+		
+		{\Large
+			A Professional Thesis Template
+			\par}
+		
+		\vspace{2cm}
+		
+		\rule{6cm}{6cm}
+		
+		\vspace{2cm}
+		
+		{\Large
+			Brintha Theboral
+			\par}
+		
+		\vspace{1cm}
+		
+		Department of Computer Science Engineering
+		
+		Global Institute of Technology
+		
+		\vfill
+		
+		Submitted in partial fulfillment of the requirements\\
+		for the degree of\\
+		Master of Science in Artificial Intelligence
+		
+		\vfill
+		
+		{\large May 2026}
+		
+	\end{titlepage}
+	
+	% =================================================
+	% DECLARATION
+	% =================================================
+	
+	\chapter*{Declaration}
+	
+	I hereby declare that this thesis entitled
+	\textit{Artificial Intelligence for Smart Urban Transportation Systems}
+	is an original research work carried out by me.
+	
+	\newpage
+	
+	% =================================================
+	% ACKNOWLEDGEMENT
+	% =================================================
+	
+	\chapter*{Acknowledgement}
+	
+	I sincerely thank my supervisor, faculty members, friends, and family members for their valuable support throughout this research work.
+	
+	\newpage
+	
+	% =================================================
+	% ABSTRACT
+	% =================================================
+	
+	\chapter*{Abstract}
+	
+	Urban traffic congestion has become a major challenge in modern smart cities. This thesis presents an AI-based framework for intelligent transportation management using deep learning and IoT systems.
+	
+	The proposed framework integrates real-time sensor analytics, machine learning prediction systems, and adaptive traffic optimization methods to improve transportation efficiency and reduce congestion.
+	
+	\newpage
+	
+	% =================================================
+	% TABLE OF CONTENTS
+	% =================================================
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\listoftables
+	
+	\newpage
+	
+	\listoffigures
+	
+	\newpage
+	
+	% =================================================
+	% CHAPTER 1
+	% =================================================
+	
+	\chapter{Introduction}
+	
+	\section{Background}
+	
+	Rapid urbanization has increased transportation challenges worldwide. Smart transportation systems are becoming essential for sustainable urban development.
+	
+	\section{Problem Statement}
+	
+	Traditional traffic systems fail to dynamically adapt to changing traffic conditions.
+	
+	\section{Objectives}
+	
+	\begin{itemize}
+		
+		\item Develop AI-based traffic prediction systems
+		
+		\item Improve congestion management
+		
+		\item Optimize urban mobility
+		
+	\end{itemize}
+	
+	\section{Scope of the Study}
+	
+	This research focuses on intelligent transportation systems using machine learning and IoT technologies.
+	
+	% =================================================
+	% CHAPTER 2
+	% =================================================
+	
+	\chapter{Literature Review}
+	
+	\section{Smart Transportation Systems}
+	
+	Recent advancements in smart city infrastructure have enabled intelligent transportation frameworks.
+	
+	\section{Machine Learning Approaches}
+	
+	Several AI techniques have been proposed:
+	
+	\begin{itemize}
+		
+		\item Decision Trees
+		
+		\item Random Forest
+		
+		\item Deep Neural Networks
+		
+		\item LSTM Models
+		
+	\end{itemize}
+	
+	\section{Research Gap}
+	
+	Existing systems often lack real-time scalability and adaptive optimization.
+	
+	% =================================================
+	% CHAPTER 3
+	% =================================================
+	
+	\chapter{Methodology}
+	
+	\section{System Architecture}
+	
+	The proposed system integrates:
+	
+	\begin{enumerate}
+		
+		\item IoT Sensor Networks
+		
+		\item Data Collection Layer
+		
+		\item AI Prediction Engine
+		
+		\item Smart Dashboard
+		
+	\end{enumerate}
+	
+	\section{Mathematical Model}
+	
+	Traffic prediction equation:
+	
+	\[
+	Y_t = f(X_t,W,b)
+	\]
+	
+	Where:
+	
+	\begin{itemize}
+		
+		\item $X_t$ = Input traffic data
+		
+		\item $W$ = Weight parameters
+		
+		\item $b$ = Bias term
+		
+	\end{itemize}
+	
+	Loss function:
+	
+	\[
+	L = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y_i})^2
+	\]
+	
+	\section{Data Collection}
+	
+	Traffic data was collected from IoT-enabled smart transportation systems.
+	
+	% =================================================
+	% CHAPTER 4
+	% =================================================
+	
+	\chapter{Results and Discussion}
+	
+	\section{Performance Analysis}
+	
+	\begin{table}[h]
+		
+		\centering
+		
+		\caption{Model Accuracy Comparison}
+		
+		\begin{tabular}{|c|c|}
+			
+			\hline
+			
+			Model & Accuracy \\
+			
+			\hline
+			
+			Linear Regression & 78.2\% \\
+			
+			\hline
+			
+			Random Forest & 85.6\% \\
+			
+			\hline
+			
+			LSTM Network & 93.1\% \\
+			
+			\hline
+			
+			CNN-LSTM Hybrid & 95.4\% \\
+			
+			\hline
+			
+		\end{tabular}
+		
+	\end{table}
+	
+	\section{Discussion}
+	
+	The hybrid deep learning model achieved superior accuracy compared to traditional machine learning approaches.
+	
+	\section{Architecture Diagram}
+	
+	\begin{figure}[h]
+		
+		\centering
+		
+		\rule{12cm}{6cm}
+		
+		\caption{AI-Based Smart Transportation Architecture}
+		
+	\end{figure}
+	
+	% =================================================
+	% CHAPTER 5
+	% =================================================
+
+	\chapter{Conclusion and Future Work}
+	
+	\section{Conclusion}
+	
+	This thesis demonstrated the effectiveness of artificial intelligence techniques for smart urban transportation systems.
+	
+	\section{Future Scope}
+	
+	Future enhancements include:
+	
+	\begin{itemize}
+		
+		\item Edge AI deployment
+		
+		\item Autonomous vehicle integration
+		
+		\item Smart traffic signal optimization
+		
+		\item Real-time analytics
+		
+	\end{itemize}
+	
+	% =================================================
+	% REFERENCES
+	% =================================================
+	
+	\chapter*{References}
+	
+	\begin{enumerate}
+		
+		\item Smith J., Smart Transportation Systems, Springer, 2023.
+		
+		\item Johnson A., Deep Learning for Traffic Prediction, IEEE Transactions, 2022.
+		
+		\item Kumar R., AI-Based Urban Analytics, Elsevier, 2021.
+		
+		\item Lee K., IoT and Smart Mobility Systems, Wiley Publications, 2020.
+		
+	\end{enumerate}
+	
+	% =================================================
+	% APPENDIX
+	% =================================================
+	
+	\appendix
+	
+	\chapter{Dataset Information}
+	
+	The dataset contains:
+	
+	\begin{itemize}
+		
+		\item Vehicle count data
+		
+		\item GPS tracking information
+		
+		\item Weather conditions
+		
+		\item Traffic signal timings
+		
+	\end{itemize}
+	
+\end{document}

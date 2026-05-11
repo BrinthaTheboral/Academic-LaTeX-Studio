@@ -1,0 +1,248 @@
+\documentclass[12pt,a4paper]{article}
+
+% ================= PACKAGES =================
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+
+% ================= FONT =================
+
+\usepackage{newtxtext,newtxmath}
+
+% ================= LINE SPACING =================
+
+\onehalfspacing
+
+% ================= HEADER =================
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{AI-Based Traffic Prediction}
+\fancyhead[R]{Research Paper Template}
+\fancyfoot[C]{\thepage}
+
+% ================= SECTION STYLE =================
+
+\titleformat{\section}
+{\Large\bfseries\color{blue}}
+{\thesection}{1em}{}
+
+% ================= DOCUMENT =================
+
+\begin{document}
+	
+	% ================= TITLE PAGE =================
+	
+	\begin{titlepage}
+		
+		\centering
+		
+		\vspace*{2cm}
+		
+		{\Huge\bfseries
+			AI-Based Smart Traffic Congestion Prediction
+			\par}
+		
+		\vspace{1cm}
+		
+		{\Large
+			Using Deep Learning and IoT Systems
+			\par}
+		
+		\vspace{2cm}
+		
+		\includegraphics[width=0.25\textwidth]{example-image}
+		
+		\vfill
+		
+		{\Large
+			Brintha Theboral
+			\par}
+		
+		\vspace{0.5cm}
+		
+		Department of Computer Science Engineering
+		
+		ABC Institute of Technology
+		
+		Chennai, India
+		
+		\vfill
+		
+		{\large \today}
+		
+	\end{titlepage}
+	
+	% ================= ABSTRACT =================
+	
+	\section*{Abstract}
+	
+	Urban traffic congestion has become a major issue in smart cities. This paper proposes an AI-driven traffic prediction framework using deep learning and IoT sensor systems. The proposed model improves traffic forecasting accuracy and enables efficient congestion management.
+	
+	\vspace{0.5cm}
+	
+	\textbf{Keywords:}
+	Artificial Intelligence, Traffic Prediction, Smart Cities, Deep Learning, IoT
+	
+	% ================= INTRODUCTION =================
+	
+	\section{Introduction}
+	
+	Rapid urbanization has significantly increased traffic congestion worldwide. Intelligent transportation systems are essential for improving urban mobility and reducing fuel consumption.
+	
+	Deep learning techniques provide improved prediction capabilities compared to traditional statistical approaches.
+	
+	% ================= LITERATURE SURVEY =================
+	
+	\section{Literature Survey}
+	
+	Several studies have explored machine learning methods for traffic prediction.
+	
+	\begin{itemize}
+		\item CNN-based traffic forecasting systems
+		\item IoT-enabled smart transportation
+		\item LSTM recurrent neural networks
+		\item Hybrid AI optimization models
+	\end{itemize}
+	
+	% ================= PROPOSED SYSTEM =================
+	
+	\section{Proposed System}
+	
+	The proposed system consists of:
+	
+	\begin{enumerate}
+		\item Traffic Data Collection
+		\item Sensor Integration
+		\item Data Preprocessing
+		\item AI Prediction Engine
+		\item Real-Time Monitoring Dashboard
+	\end{enumerate}
+	
+	% ================= EQUATIONS =================
+	
+	\section{Mathematical Model}
+	
+	Traffic flow prediction can be represented as:
+	
+	\[
+	Y_t = f(X_t,W,b)
+	\]
+	
+	where:
+	
+	\begin{itemize}
+		\item $X_t$ = Input traffic data
+		\item $W$ = Weight parameters
+		\item $b$ = Bias
+	\end{itemize}
+	
+	Loss function:
+	
+	\[
+	L = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y_i})^2
+	\]
+	
+	% ================= TABLE =================
+	
+	\section{Experimental Results}
+	
+	\begin{table}[h]
+		\centering
+		
+		\caption{Performance Comparison}
+		
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Model & Accuracy & RMSE \\
+			\hline
+			Linear Regression & 78.2\% & 12.4 \\
+			\hline
+			Random Forest & 85.6\% & 8.9 \\
+			\hline
+			LSTM & 93.1\% & 4.3 \\
+			\hline
+			CNN-LSTM Hybrid & 95.4\% & 3.1 \\
+			\hline
+		\end{tabular}
+		
+	\end{table}
+	
+	% ================= FIGURE =================
+	
+	\section{System Architecture}
+	
+	\begin{figure}[h]
+		
+		\centering
+		
+		\includegraphics[width=0.8\textwidth]{example-image}
+		
+		\caption{AI-Based Traffic Prediction Architecture}
+		
+	\end{figure}
+	
+	% ================= DISCUSSION =================
+	
+	\section{Discussion}
+	
+	The proposed hybrid deep learning model achieved higher prediction accuracy due to temporal feature extraction and real-time sensor integration.
+	
+	% ================= FUTURE WORK =================
+	
+	\section{Future Scope}
+	
+	Future enhancements include:
+	
+	\begin{itemize}
+		\item Edge AI deployment
+		\item 5G-enabled traffic systems
+		\item Autonomous vehicle integration
+		\item Smart signal optimization
+	\end{itemize}
+	
+	% ================= CONCLUSION =================
+	
+	\section{Conclusion}
+	
+	This research demonstrated the effectiveness of AI-based traffic prediction systems for smart city infrastructure. The proposed framework improves scalability and prediction accuracy.
+	
+	% ================= REFERENCES =================
+	
+	\section*{References}
+	
+	\begin{enumerate}
+		
+		\item Smith J., ``Smart Traffic Monitoring Using IoT'', IEEE Transactions, 2023.
+		
+		\item Johnson A., ``Deep Learning for Traffic Forecasting'', Springer, 2022.
+		
+		\item Kumar R., ``Urban AI Systems'', Elsevier, 2021.
+		
+	\end{enumerate}
+	
+	% ================= APPENDIX =================
+	
+	\appendix
+	
+	\section{Dataset Details}
+	
+	The dataset contains:
+	\begin{itemize}
+		\item Vehicle count
+		\item Signal timing
+		\item GPS movement
+		\item Weather conditions
+	\end{itemize}
+	
+\end{document}

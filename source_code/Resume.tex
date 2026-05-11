@@ -1,0 +1,146 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.7in,right=0.7in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=MidnightBlue
+}
+
+\pagestyle{empty}
+
+% Section Styling
+\titleformat{\section}{
+	\large\bfseries\color{MidnightBlue}
+}{}{0em}{}[\titlerule]
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+% Custom Commands
+\newcommand{\resumeItem}[1]{
+	\item \small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{2pt}
+	\begin{tabularx}{\textwidth}{X r}
+		\textbf{#1} & \textcolor{gray}{#2} \\
+		\textit{#3} & \textit{#4} \\
+	\end{tabularx}
+}
+
+\begin{document}
+	
+	% ================= HEADER =================
+	
+	\begin{center}
+		{\Huge \textbf{Brintha Theboral}} \\[6pt]
+		
+		\faPhone \ +91 12345 12345 \quad
+		\faEnvelope \ \href{mailto:xxx@email.com}{xxx@email.com} \quad
+		\faGithub \ \href{https://github.com/yyy}{github.com/yyy} \quad
+		\faLinkedin \ \href{https://linkedin.com/in/zzz}{linkedin.com/in/zzz}
+	\end{center}
+	
+	% ================= SUMMARY =================
+	
+	\section*{Profile Summary}
+	
+	Motivated Computer Science Engineering student passionate about Artificial Intelligence, full-stack development, and scalable software systems. Strong experience in machine learning projects, REST APIs, and technical documentation using LaTeX.
+	
+	% ================= EDUCATION =================
+	
+	\section*{Education}
+	
+	\resumeSubheading
+	{ABC Institute of Technology}{2022 -- 2026}
+	{B.E Computer Science Engineering}{CGPA: 8.9/10}
+	
+	\resumeSubheading
+	{Velammal Higher Secondary School}{2020 -- 2022}
+	{Higher Secondary Education}{92\%}
+	
+	% ================= SKILLS =================
+	
+	\section*{Technical Skills}
+	
+	\begin{itemize}[leftmargin=0.15in]
+		\item{
+			\textbf{Programming:} Python, C++, JavaScript, SQL
+		}
+		
+		\item{
+			\textbf{Frameworks:} React, Node.js, Flask
+		}
+		
+		\item{
+			\textbf{Tools:} Git, Docker, Linux, TeXstudio, VS Code
+		}
+		
+		\item{
+			\textbf{Core Areas:} Machine Learning, REST APIs, Data Structures
+		}
+	\end{itemize}
+	
+	% ================= PROJECTS =================
+	
+	\section*{Projects}
+	
+	\resumeSubheading
+	{AI Resume Analyzer}{Jan 2025}
+	{Python, NLP, Flask}{}
+	
+	\begin{itemize}[leftmargin=0.2in]
+		\resumeItem{Built an AI-based resume screening system using Natural Language Processing techniques.}
+		\resumeItem{Implemented keyword extraction and ATS score prediction modules.}
+		\resumeItem{Improved matching accuracy by 18\% using TF-IDF vectorization.}
+	\end{itemize}
+	
+	\resumeSubheading
+	{Smart Traffic Prediction System}{Aug 2024}
+	{Machine Learning, Streamlit}{}
+	
+	\begin{itemize}[leftmargin=0.2in]
+		\resumeItem{Developed a traffic density prediction dashboard using regression models.}
+		\resumeItem{Visualized real-time congestion analytics with interactive charts.}
+	\end{itemize}
+	
+	% ================= EXPERIENCE =================
+	
+	\section*{Experience}
+	
+	\resumeSubheading
+	{Machine Learning Intern -- TechNova Labs}{May 2025 -- Jul 2025}
+	{Chennai, India}{}
+	
+	\begin{itemize}[leftmargin=0.2in]
+		\resumeItem{Worked on customer churn prediction using classification algorithms.}
+		\resumeItem{Optimized preprocessing pipelines reducing training time by 22\%.}
+	\end{itemize}
+	
+	% ================= CERTIFICATIONS =================
+	
+	\section*{Certifications}
+	
+	\begin{itemize}[leftmargin=0.2in]
+		\resumeItem{Machine Learning Specialization -- Coursera}
+		\resumeItem{AWS Cloud Foundations}
+		\resumeItem{Python for Data Science -- IBM}
+	\end{itemize}
+	
+	% ================= ACHIEVEMENTS =================
+	
+	\section*{Achievements}
+	
+	\begin{itemize}[leftmargin=0.2in]
+		\resumeItem{Finalist in National Level Hackathon among 500+ teams.}
+		\resumeItem{Solved 400+ coding problems across LeetCode and CodeChef.}
+	\end{itemize}
+	
+\end{document}
